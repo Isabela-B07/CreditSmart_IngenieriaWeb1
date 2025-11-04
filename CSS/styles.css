@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Reset de márgenes y padding para que el contenido ocupe toda la pantalla */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* ENCABEZADO Y NAVEGACIÓN */
+
+header {
+  background-color: #4da937; 
+  padding: 2rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.encabezado {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex; /*Organiza el menu y la lista para que no quede vertical sino horizontal*/
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: White; 
+  font-family: "Poppins", sans-serif;
+}
+
+.menu {
+  list-style: none;
+  display: flex; /*Organiza los li de forma vertical*/
+  gap: 2rem;
+}
+
+.menu a {
+  color:white; 
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 19px;
+  transition: color 0.3s;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: #0c6c05; 
+}
+
+/* BANNER PRINCIPAL - HERO} */
+.hero {
+  background: linear-gradient(135deg, #8bca0c 0%, #0abb4b 100%); 
+  color: #fefce8;
+  padding: 3rem 0; /*es el espacio interno entre el borde del elemento y su contenido.*/
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); 
+}
+
+.hero h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #fefce8; 
+}
+
+.hero p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  opacity: 0.9;
+  color: #fefce8;
+}
+
+/* SECCIÓN DE PRODUCTOS CREDITICIOS */
+.seccion-creditos {
+  padding: 3rem 0;
+  background-color: #fefce8; /* Fondo beige claro */
+}
+
+.seccion-creditos h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #4da937; /* Verde medio: título destacado */
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* GRID DE TARJETAS */
+.credits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 0 20px;
+}
+
+/* TARJETA INDIVIDUAL */
+.credit-card {
+  background-color: #ffffff; 
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); 
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.credit-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(39, 136, 14, 0.2); /* Verde medio en sombra */
+}
+
+/* ENCABEZADO DE TARJETA */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.card-header h4 {
+  font-size: 1.3rem;
+  color: #4da937; /* Verde medio */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* DETALLES DEL CRÉDITO */
+.details {
+  margin-bottom: 1.5rem;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e5e7eb; 
+}
+
+.label {
+  color: #6b7280; 
+  font-size: 0.9rem;
+}
+
+.value {
+  font-weight: 600;
+  color: #4da937; /* Verde medio */
+}
+
+.highlight {
+  color: #0c7a34; /* Verde brillante para tasas */
+  font-size: 1.1rem;
+}
+
+/* BOTÓN */
+.btn-primary {
+  background-color: #4da937;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  font-family: 'Inter', sans-serif;
+}
+
+.btn-primary:hover {
+  background-color: #3b8c2c; /* Verde más oscuro al pasar el mouse */
+}
+
+/* FOOTER PERSONALIZADO */
+.footer {
+  background-color: #4da937;
+  color: #fefce8; 
+  padding: 2rem 0;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05); /* Sombra superior suave */
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.footer-container p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.contacto {
+  font-size: 0.9rem;
+  color: #fefce8;
+  opacity: 0.9;
+}
+
