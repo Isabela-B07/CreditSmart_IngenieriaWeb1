@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solicitar Crédito</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <div class="encabezado">
+      <h1 class="logo">CreditSmart</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="simulador.html">Simulador Crédito</a></li>
+          <li><a href="solicitar.html" class="active">Solicitar Crédito</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+      <!-- BANNER PRINCIPAL -->
+    <!-- Hero (mensaje introductorio) -->
+    <section class="hero"> <!-- Representa la sección del hero-->
+      <div class="container">
+        <h2>Solicitud de Creditos</h2>
+        <p>Solicita el crédito que necesites</p>
+      </div>
+    </section>
+
+  <!-- FORMULARIO DE SOLICITUD -->
+  <main>
+    <section class="formulario-solicitud">
+      <h2>Solicitar Crédito</h2>
+      <form class="form-solicitud">
+
+        <!-- DATOS PERSONALES -->
+        <fieldset>
+          <legend>Datos Personales</legend>
+
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" />
+
+          <label for="cedula">Cédula:</label>
+          <input type="number" id="cedula" name="cedula" />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" />
+        </fieldset>
+
+        <!-- DATOS DEL CRÉDITO -->
+        <fieldset>
+          <legend>Datos del Crédito</legend>
+
+          <label for="tipo">Tipo de crédito:</label>
+          <select id="tipo" name="tipo">
+            <option value="">Seleccione una opción</option>
+            <option value="libre">Crédito Libre Inversión</option>
+            <option value="vivienda">Crédito de Vivienda</option>
+            <option value="vehicular">Crédito Vehícular</option>
+            <option value="agropecuario">Crédito Agropecuario</option>
+            <option value="educativo">Crédito Educativo</option>
+            <option value="empresarial">Crédito Empresarial</option>
+          </select>
+
+          <label for="monto">Monto solicitado:</label>
+          <input type="number" id="monto" name="monto" />
+
+          <label for="plazo">Plazo en meses:</label>
+          <select id="plazo" name="plazo">
+            <option value="">Seleccione plazo</option>
+            <option value="12">12</option>
+            <option value="24">24</option>
+            <option value="36">36</option>
+            <option value="48">48</option>
+            <option value="60">60</option>
+          </select>
+
+          <label for="destino">Destino del crédito:</label>
+          <textarea id="destino" name="destino" rows="4"></textarea>
+        </fieldset>
+
+        <!-- DATOS LABORALES -->
+        <fieldset>
+          <legend>Datos Laborales</legend>
+
+          <label for="empresa">Empresa donde trabaja:</label>
+          <input type="text" id="empresa" name="empresa" />
+
+          <label for="cargo">Cargo:</label>
+          <input type="text" id="cargo" name="cargo" />
+
+          <label for="ingresos">Ingresos mensuales:</label>
+          <input type="number" id="ingresos" name="ingresos" />
+        </fieldset>
+
+        <!-- BOTONES -->
+        <div class="botones-formulario">
+          <button type="submit" class="btn-primary">Enviar Solicitud</button>
+          <button type="reset" class="btn-secondary">Limpiar Formulario</button>
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>2025 CreditSmart. Todos los derechos reservados.</p>
+      <p class="contacto">Contacto: creditsmart@gmail.com</p>
+    </div>
+  </footer>
+
+</body>
+</html>

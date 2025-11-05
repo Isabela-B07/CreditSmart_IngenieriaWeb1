@@ -286,3 +286,77 @@ header {
   text-align: center;
 }
 
+/*--------------------------------SOLICITAR------------------------------------*/
+
+/* CONTENEDOR DEL FORMULARIO */
+.formulario-solicitud {
+  background-color: #eeebcd; /* Fondo beige claro */
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 3rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra suave */
+}
+
+/* TÍTULO PRINCIPAL */
+.formulario-solicitud h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #4da937; /* Verde medio */
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* FORMULARIO GENERAL */
+.form-solicitud {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* GRUPOS DE CAMPOS */
+fieldset {
+  border: 1px solid #d1d5db; /* Borde gris claro */
+  border-radius: 8px;
+  padding: 1.5rem;
+  background-color: #ffffff;
+}
+
+legend {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #4da937;
+  margin-bottom: 1rem;
+}
+
+/* CAMPOS INDIVIDUALES */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: #374151; /* Gris oscuro */
+}
+
+/* Va a afecta a los 3 tipos de elementos*/
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  background-color: #f9fafb;
+  color: #374151;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #4da937;
+  outline: none;
+}
