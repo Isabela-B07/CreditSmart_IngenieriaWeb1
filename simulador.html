@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulador</title>
+  <!-- Para enlazar el archivo de estilos -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header>
+    <div class="encabezado"> <!-- Contenedor, agrupa logo y menú -->
+      <h1 class="logo">CreditSmart</h1> <!-- Falta ponerle logo -->
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="simulador.html" class="active">Simulador Crédito</a></li>
+          <li><a href="solicitar.html">Solicitar Crédito</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <!-- BANNER PRINCIPAL -->
+    <!-- Hero (mensaje introductorio) -->
+    <section class="hero"> <!-- Representa la sección del hero-->
+      <div class="container">
+        <h2>Simulador de Créditos</h2>
+        <p>Selecciona el crédito ideal según las necesidades que tengas</p>
+      </div>
+    </section>
+
+  <!-- FORMULARIO DE FILTROS -->
+  <main>
+    <section class="simulador-filtros">
+      <h3>Buscar Créditos</h3>
+
+      <form class="form-filtros"> <!-- Define un formulario HTML-->
+        <div class="contenedor"> <!-- Agrupa elementos dentro del formulario -->
+
+          <!-- Sección 1 -->
+          <div class="seccion">
+            <label for="nombre">Buscar por nombre</label> <!-- Etiqueta que le dice al usuario que debe hacer -->
+            <select id="nombre"> <!-- id que vincula el texco con ese campo-->
+              <option value="">Seleccione una opción</option>
+              <option value="libre">Crédito Libre Inversión</option>
+              <option value="vivienda">Crédito de Vivienda</option>
+              <option value="vehicular">Crédito Vehícular</option>
+              <option value="agropecuario">Crédito Agropecuario</option>
+              <option value="educativo">Crédito Educativo</option>
+              <option value="empresarial">Crédito Empresarial</option>
+            </select>
+          </div>
+
+          <!-- Sección 2 -->
+          <div class="seccion">
+            <label for="monto">Rango de Monto:</label>
+            <select id="monto">
+              <option value="">Seleccione una opción</option>
+              <option value="100">$100.000 - $900.000</option>
+              <option value="millon">$1.000.000</option>
+              <option value="millones">$2.000.000 - $90.000.000</option>
+            </select>
+          </div>
+
+          <!-- Sección 3 -->
+          <div class="seccion">
+            <label for="edad">Rango de edad:</label>
+            <select id="edad">
+              <option value="">Seleccione una opción</option>
+              <option value="18-30">18–30</option>
+              <option value="31-45">31–45</option>
+              <option value="46-60">46–60</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- BOTÓN LIMPIAR FILTROS -->
+        <div class="boton-filtros">
+          <button type="reset" class="btn-secondary">Limpiar Filtros</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer"> <!-- Etiqueta semántica que indica pie de página -->
+    <div class="footer-container">
+      <p>2025 CreditSmart. Todos los derechos reservados.</p>
+      <p class="contacto">Contacto: creditsmart@gmail.com</p>
+    </div>
+  </footer>
+
+</body>
+</html>

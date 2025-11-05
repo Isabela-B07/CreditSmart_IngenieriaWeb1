@@ -32,7 +32,7 @@ header {
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: White; 
+  color: white; 
   font-family: "Poppins", sans-serif;
 }
 
@@ -43,7 +43,7 @@ header {
 }
 
 .menu a {
-  color:white; 
+  color: white; 
   text-decoration: none;
   font-weight: 500;
   font-size: 19px;
@@ -55,7 +55,7 @@ header {
   color: #0c6c05; 
 }
 
-/* BANNER PRINCIPAL - HERO} */
+/* BANNER PRINCIPAL - HERO */
 .hero {
   background: linear-gradient(135deg, #8bca0c 0%, #0abb4b 100%); 
   color: #fefce8;
@@ -160,22 +160,35 @@ header {
   font-size: 1.1rem;
 }
 
-/* BOTÓN */
+/* BOTONES GENERALES */
+.btn-primary,
+.btn-secondary {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+}
+
 .btn-primary {
   background-color: #4da937;
   color: white;
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  padding: 0.8rem;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: background-color 0.3s;
-  font-family: 'Inter', sans-serif;
 }
 
 .btn-primary:hover {
   background-color: #3b8c2c; /* Verde más oscuro al pasar el mouse */
+}
+
+.btn-secondary {
+  background-color: #86efac;
+  color: #065f46; 
+}
+
+.btn-secondary:hover {
+  background-color: #4da937; /* Verde medio al pasar el mouse */
+  color: white;
 }
 
 /* FOOTER PERSONALIZADO */
@@ -203,5 +216,73 @@ header {
   font-size: 0.9rem;
   color: #fefce8;
   opacity: 0.9;
+}
+
+/*--------------------------------SIMULADOR------------------------------------*/
+/* SECCIÓN DEL SIMULADOR RECUADRO*/
+.simulador-filtros {
+  background-color: #ffffff; 
+  border: 1px solid #d1d5db; 
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra suave */
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+/* TÍTULO DEL SIMULADOR */
+.simulador-filtros h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #4da937; /* Verde medio */
+  margin-bottom: 2rem;
+}
+
+/* FORMULARIO DE FILTROS */
+.form-filtros .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* BLOQUES DE FILTRO */
+.seccion {
+  flex: 1 1 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.seccion label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #374151; 
+}
+
+/* SELECT */
+.seccion select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #d1d5db; /* Borde gris claro */
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  background-color: #f9fafb;
+  color: #374151;
+  transition: border-color 0.3s;
+}
+
+.seccion select:focus {
+  border-color: #4da937; /* Verde medio al enfocar */
+  outline: none;
+}
+
+/* BOTÓN LIMPIAR FILTROS */
+.boton-filtros {
+  text-align: center;
 }
 
