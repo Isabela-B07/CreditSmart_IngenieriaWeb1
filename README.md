@@ -27,7 +27,7 @@ interfacesWeb_CreditSmart/
     - vivienda.png                     # Imagen para crédito de vivienda
 
 ## Imagen estructura de archivos
-![Estructura de los archivos](img/estructuraArchivos.png)
+![Estructura de los archivos](img/estructuraArchivos.jpg)
 ---
 
 ### **Instrucciones para ejecutar el proyecto**
