@@ -1,16 +1,16 @@
 # CreditSmart_IngenieriaWeb1
-**Estudiantes**
-Isabela Blandón Vélez
-Salome Molina Reyes
+**Estudiantes:**
+Isabela Blandón Vélez,
+Salome Molina Reyes,
 Angela Alean Acuña
 
-**Descripción**
+**Descripción:**
 Este repositorio contiene las evidencias del curso Ingeniería Web I, desarrolladas a través del caso de estudio CreditSmart. Incluye estructura HTML, estilos CSS personalizados, diseño semántico y componentes visuales que reflejan buenas prácticas web.
 
 **Estructura de archivos**
-## 📁 Estructura de archivos
+## 📁Estructura de archivos
 
-- interfacesWeb_CreditSmart/
+interfacesWeb_CreditSmart/
   - index.html                         # Página principal
   - simulador.html                     # Página del simulador
   - solicitar.html                     # Página de solicitud
@@ -26,7 +26,8 @@ Este repositorio contiene las evidencias del curso Ingeniería Web I, desarrolla
     - vehiculo.png                     # Imagen para crédito vehicular
     - vivienda.png                     # Imagen para crédito de vivienda
 
-
+## Imagen estructura de archivos
+![Estructura de los archivos](img/estructuraArchivos.png)
 ---
 
 ### **Instrucciones para ejecutar el proyecto**

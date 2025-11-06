@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-/* Reset de márgenes y padding para que el contenido ocupe toda la pantalla */
+/* Márgenes y padding para que el contenido ocupe toda la pantalla */
 * {
   margin: 0;
   padding: 0;
@@ -94,13 +94,13 @@ header {
 /* SECCIÓN DE PRODUCTOS CREDITICIOS */
 .seccion-creditos {
   padding: 3rem 0;
-  background-color: White; /* Fondo beige claro */
+  background-color: White; 
 }
 
 .seccion-creditos h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
-  color: #4C2B08; /*Nuestros productos*/
+  color: #4C2B08; 
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -124,7 +124,7 @@ header {
 
 .credit-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(39, 136, 14, 0.2); /* Verde medio en sombra */
+  box-shadow: 0 4px 15px rgba(39, 136, 14, 0.2); 
 }
 
 /* ENCABEZADO DE TARJETA */
@@ -142,7 +142,7 @@ header {
 
 .card-header h4 {
   font-size: 1.3rem;
-  color: #5B3023; /* Verde medio */
+  color: #5B3023; 
   font-family: 'Poppins', sans-serif;
 }
 
@@ -165,11 +165,11 @@ header {
 
 .value {
   font-weight: 600;
-  color: #8B4720; /* Verde medio */
+  color: #8B4720; 
 }
 
 .highlight {
-  color: #4C2B08; /* Verde brillante para tasas */
+  color: #4C2B08; 
   font-size: 1.1rem;
 }
 
@@ -204,7 +204,7 @@ header {
   color: white;
 }
 
-/* FOOTER PERSONALIZADO */
+/* FOOTER */
 .footer {
   background-color: #8B4720;
   color: #fefce8; 
@@ -303,7 +303,7 @@ header {
 
 /* CONTENEDOR DEL FORMULARIO */
 .formulario-solicitud {
-  background-color: #f7ecc4; /* Fondo beige claro */
+  background-color: #f7ecc4; 
   padding: 3rem 2rem;
   max-width: 900px;
   margin: 3rem auto;
@@ -329,7 +329,7 @@ header {
 
 /* GRUPOS DE CAMPOS */
 fieldset {
-  border: 1px solid #d1d5db; /* Borde gris claro */
+  border: 1px solid #d1d5db; 
   border-radius: 8px;
   padding: 2rem 1.5rem 1.5rem;
   background-color: #ffffff;
@@ -361,7 +361,7 @@ label {
   color: #374151; /* Gris oscuro */
 }
 
-/* Va a afecta a los 3 tipos de elementos*/
+/* Va a afectar a los 3 tipos de elementos*/
 input,
 select,
 textarea {
