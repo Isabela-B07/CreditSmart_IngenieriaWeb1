@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
 /* Reset de márgenes y padding para que el contenido ocupe toda la pantalla */
 * {
   margin: 0;
@@ -15,7 +15,7 @@ html, body {
 /* ENCABEZADO Y NAVEGACIÓN */
 
 header {
-  background-color: #4da937; 
+  background-color: #f7ecc4; 
   padding: 2rem 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
@@ -29,12 +29,25 @@ header {
   align-items: center;
 }
 
-.logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: white; 
-  font-family: "Poppins", sans-serif;
+.logo-contenedor {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 }
+
+.logo-img {
+  width: 48px;
+  height: auto;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #96462F;
+  font-family: "Oleo Script", cursive;
+}
+
 
 .menu {
   list-style: none;
@@ -43,21 +56,21 @@ header {
 }
 
 .menu a {
-  color: white; 
+  color: #96462F; 
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 19px;
   transition: color 0.3s;
 }
 
 .menu a:hover,
 .menu a.active {
-  color: #0c6c05; 
+  color: #382614; 
 }
 
 /* BANNER PRINCIPAL - HERO */
 .hero {
-  background: linear-gradient(135deg, #8bca0c 0%, #0abb4b 100%); 
+  background: linear-gradient(135deg, #AD3F30 0%, #69261D 100%); 
   color: #fefce8;
   padding: 3rem 0; /*es el espacio interno entre el borde del elemento y su contenido.*/
   text-align: center;
@@ -81,13 +94,13 @@ header {
 /* SECCIÓN DE PRODUCTOS CREDITICIOS */
 .seccion-creditos {
   padding: 3rem 0;
-  background-color: #fefce8; /* Fondo beige claro */
+  background-color: White; /* Fondo beige claro */
 }
 
 .seccion-creditos h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
-  color: #4da937; /* Verde medio: título destacado */
+  color: #4C2B08; /*Nuestros productos*/
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -102,7 +115,7 @@ header {
 
 /* TARJETA INDIVIDUAL */
 .credit-card {
-  background-color: #ffffff; 
+  background-color: #f7ecc4; 
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); 
@@ -129,7 +142,7 @@ header {
 
 .card-header h4 {
   font-size: 1.3rem;
-  color: #4da937; /* Verde medio */
+  color: #5B3023; /* Verde medio */
   font-family: 'Poppins', sans-serif;
 }
 
@@ -142,7 +155,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 0;
-  border-bottom: 1px solid #e5e7eb; 
+  border-bottom: 1px solid #a2a2a4; 
 }
 
 .label {
@@ -152,11 +165,11 @@ header {
 
 .value {
   font-weight: 600;
-  color: #4da937; /* Verde medio */
+  color: #8B4720; /* Verde medio */
 }
 
 .highlight {
-  color: #0c7a34; /* Verde brillante para tasas */
+  color: #4C2B08; /* Verde brillante para tasas */
   font-size: 1.1rem;
 }
 
@@ -173,27 +186,27 @@ header {
 }
 
 .btn-primary {
-  background-color: #4da937;
+  background-color: #9C4722;
   color: white;
 }
 
 .btn-primary:hover {
-  background-color: #3b8c2c; /* Verde más oscuro al pasar el mouse */
+  background-color: #4C2B08; 
 }
 
 .btn-secondary {
-  background-color: #86efac;
-  color: #065f46; 
+  background-color: #9C4722;
+  color: White; 
 }
 
 .btn-secondary:hover {
-  background-color: #4da937; /* Verde medio al pasar el mouse */
+  background-color: #4C2B08; 
   color: white;
 }
 
 /* FOOTER PERSONALIZADO */
 .footer {
-  background-color: #4da937;
+  background-color: #8B4720;
   color: #fefce8; 
   padding: 2rem 0;
   font-family: 'Inter', sans-serif;
@@ -221,8 +234,8 @@ header {
 /*--------------------------------SIMULADOR------------------------------------*/
 /* SECCIÓN DEL SIMULADOR RECUADRO*/
 .simulador-filtros {
-  background-color: #ffffff; 
-  border: 1px solid #d1d5db; 
+  background-color: #f7ecc4; 
+  border: 2px solid #AD3F30; 
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra suave */
   padding: 3rem 2rem;
@@ -235,7 +248,7 @@ header {
 .simulador-filtros h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
-  color: #4da937; /* Verde medio */
+  color: #382614;
   margin-bottom: 2rem;
 }
 
@@ -277,7 +290,7 @@ header {
 }
 
 .seccion select:focus {
-  border-color: #4da937; /* Verde medio al enfocar */
+  border-color: #AD3F30; 
   outline: none;
 }
 
@@ -290,7 +303,7 @@ header {
 
 /* CONTENEDOR DEL FORMULARIO */
 .formulario-solicitud {
-  background-color: #eeebcd; /* Fondo beige claro */
+  background-color: #f7ecc4; /* Fondo beige claro */
   padding: 3rem 2rem;
   max-width: 900px;
   margin: 3rem auto;
@@ -302,7 +315,7 @@ header {
 .formulario-solicitud h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
-  color: #4da937; /* Verde medio */
+  color: #382614; 
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -318,16 +331,26 @@ header {
 fieldset {
   border: 1px solid #d1d5db; /* Borde gris claro */
   border-radius: 8px;
-  padding: 1.5rem;
+  padding: 2rem 1.5rem 1.5rem;
   background-color: #ffffff;
+  position: relative;
+  
 }
 
 legend {
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  color: #4da937;
-  margin-bottom: 1rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #4C2B08;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #d1a678;
+  border-radius: 6px;
+  display: inline-block;
+  width: auto;
+  transform: translateY(0.5rem); /* Baja el texto para que no corte el borde */
 }
+
 
 /* CAMPOS INDIVIDUALES */
 label {
@@ -357,7 +380,7 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: #4da937;
+  border-color: #AD3F30;
   outline: none;
 }
 
